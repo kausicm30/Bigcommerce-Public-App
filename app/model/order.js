@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
-
+var Schema = mongoose.Schema;
+ObjectId = Schema.ObjectId;
 var orderSchema = new  mongoose.Schema({
     billing_address :{
         first_name : {type: String, require: true},

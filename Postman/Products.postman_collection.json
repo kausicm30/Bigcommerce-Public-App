@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "137392d7-7b3a-47ad-8568-450c270b832e",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3030/products/v3/create?storeHash=nda1b6kmix",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"BigCommerce Coffee Mug\",\r\n  \"price\": \"10.00\",\r\n  \"weight\": 4,\r\n  \"type\": \"physical\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/products/v3/create?storeHash=nda1b6kmix",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"v3",
+						"create"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/products/v3/create?storeHash=nda1b6kmix",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"BigCommerce Coffee Mug\",\r\n  \"price\": \"10.00\",\r\n  \"weight\": 4,\r\n  \"type\": \"physical\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/products/v3/create?storeHash=nda1b6kmix",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"products",
+								"v3",
+								"create"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2193"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"891-yMmH7DwepYNdnTIobPZ+qmWD+Ck\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 10:32:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"data\": {\n            \"id\": 119,\n            \"name\": \"BigCommerce Coffee Mug\",\n            \"type\": \"physical\",\n            \"sku\": \"\",\n            \"description\": \"\",\n            \"weight\": 4,\n            \"width\": 0,\n            \"depth\": 0,\n            \"height\": 0,\n            \"price\": 10,\n            \"cost_price\": 0,\n            \"retail_price\": 0,\n            \"sale_price\": 0,\n            \"map_price\": 0,\n            \"tax_class_id\": 0,\n            \"product_tax_code\": \"\",\n            \"calculated_price\": 10,\n            \"categories\": [],\n            \"brand_id\": 0,\n            \"option_set_id\": null,\n            \"option_set_display\": \"right\",\n            \"inventory_level\": 0,\n            \"inventory_warning_level\": 0,\n            \"inventory_tracking\": \"none\",\n            \"reviews_rating_sum\": 0,\n            \"reviews_count\": 0,\n            \"total_sold\": 0,\n            \"fixed_cost_shipping_price\": 0,\n            \"is_free_shipping\": false,\n            \"is_visible\": true,\n            \"is_featured\": false,\n            \"related_products\": [\n                -1\n            ],\n            \"warranty\": \"\",\n            \"bin_picking_number\": \"\",\n            \"layout_file\": \"\",\n            \"upc\": \"\",\n            \"mpn\": \"\",\n            \"gtin\": \"\",\n            \"search_keywords\": \"\",\n            \"availability\": \"available\",\n            \"availability_description\": \"\",\n            \"gift_wrapping_options_type\": \"any\",\n            \"gift_wrapping_options_list\": [],\n            \"sort_order\": 0,\n            \"condition\": \"New\",\n            \"is_condition_shown\": false,\n            \"order_quantity_minimum\": 0,\n            \"order_quantity_maximum\": 0,\n            \"page_title\": \"\",\n            \"meta_keywords\": [],\n            \"meta_description\": \"\",\n            \"date_created\": \"2021-08-04T10:32:01+00:00\",\n            \"date_modified\": \"2021-08-04T10:32:01+00:00\",\n            \"view_count\": 0,\n            \"preorder_release_date\": null,\n            \"preorder_message\": \"\",\n            \"is_preorder_only\": false,\n            \"is_price_hidden\": false,\n            \"price_hidden_label\": \"\",\n            \"custom_url\": {\n                \"url\": \"/bigcommerce-coffee-mug/\",\n                \"is_customized\": false\n            },\n            \"base_variant_id\": 84,\n            \"open_graph_type\": \"product\",\n            \"open_graph_title\": \"\",\n            \"open_graph_description\": \"\",\n            \"open_graph_use_meta_description\": true,\n            \"open_graph_use_product_name\": true,\n            \"open_graph_use_image\": true,\n            \"variants\": [\n                {\n                    \"id\": 84,\n                    \"product_id\": 119,\n                    \"sku\": \"\",\n                    \"sku_id\": null,\n                    \"price\": 10,\n                    \"calculated_price\": 10,\n                    \"sale_price\": 0,\n                    \"retail_price\": 0,\n                    \"map_price\": 0,\n                    \"weight\": 4,\n                    \"width\": 0,\n                    \"height\": 0,\n                    \"depth\": 0,\n                    \"is_free_shipping\": false,\n                    \"fixed_cost_shipping_price\": 0,\n                    \"calculated_weight\": 4,\n                    \"purchasing_disabled\": false,\n                    \"purchasing_disabled_message\": \"\",\n                    \"image_url\": \"\",\n                    \"cost_price\": 0,\n                    \"upc\": \"\",\n                    \"mpn\": \"\",\n                    \"gtin\": \"\",\n                    \"inventory_level\": 0,\n                    \"inventory_warning_level\": 0,\n                    \"bin_picking_number\": \"\",\n                    \"option_values\": []\n                }\n            ],\n            \"images\": [],\n            \"primary_image\": null,\n            \"videos\": [],\n            \"custom_fields\": [],\n            \"bulk_pricing_rules\": [],\n            \"reviews\": [],\n            \"options\": [],\n            \"modifiers\": [],\n            \"parent_relations\": []\n        },\n        \"meta\": {}\n    },\n    \"Message\": \"product added successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/products/v3/update?storeHash=nda1b6kmix&id=610a6c9f92d74e0ad4e0b21a",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 119,\r\n    \"name\": \"M-Shirt\",\r\n    \"price\":\"499.00\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/products/v3/update?storeHash=nda1b6kmix&id=610a6c9f92d74e0ad4e0b21a",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"v3",
+						"update"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						},
+						{
+							"key": "id",
+							"value": "610a6c9f92d74e0ad4e0b21a"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/products/v3/update?storeHash=nda1b6kmix&id=610a6c9f92d74e0ad4e0b21a",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"id\": 119,\r\n    \"name\": \"M-Shirt\",\r\n    \"price\":\"499.00\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/products/v3/update?storeHash=nda1b6kmix&id=610a6c9f92d74e0ad4e0b21a",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"products",
+								"v3",
+								"update"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								},
+								{
+									"key": "id",
+									"value": "610a6c9f92d74e0ad4e0b21a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1563"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"61b-5IbEPvXkuiOiiX80md+NOyq+wDk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 10:33:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"data\": [\n            {\n                \"id\": 119,\n                \"name\": \"M-Shirt\",\n                \"type\": \"physical\",\n                \"sku\": \"\",\n                \"description\": \"\",\n                \"weight\": 4,\n                \"width\": 0,\n                \"depth\": 0,\n                \"height\": 0,\n                \"price\": 499,\n                \"cost_price\": 0,\n                \"retail_price\": 0,\n                \"sale_price\": 0,\n                \"map_price\": 0,\n                \"tax_class_id\": 0,\n                \"product_tax_code\": \"\",\n                \"calculated_price\": 499,\n                \"categories\": [],\n                \"brand_id\": 0,\n                \"option_set_id\": null,\n                \"option_set_display\": \"right\",\n                \"inventory_level\": 0,\n                \"inventory_warning_level\": 0,\n                \"inventory_tracking\": \"none\",\n                \"reviews_rating_sum\": 0,\n                \"reviews_count\": 0,\n                \"total_sold\": 0,\n                \"fixed_cost_shipping_price\": 0,\n                \"is_free_shipping\": false,\n                \"is_visible\": true,\n                \"is_featured\": false,\n                \"related_products\": [\n                    -1\n                ],\n                \"warranty\": \"\",\n                \"bin_picking_number\": \"\",\n                \"layout_file\": \"\",\n                \"upc\": \"\",\n                \"mpn\": \"\",\n                \"gtin\": \"\",\n                \"search_keywords\": \"\",\n                \"availability\": \"available\",\n                \"availability_description\": \"\",\n                \"gift_wrapping_options_type\": \"any\",\n                \"gift_wrapping_options_list\": [],\n                \"sort_order\": 0,\n                \"condition\": \"New\",\n                \"is_condition_shown\": false,\n                \"order_quantity_minimum\": 0,\n                \"order_quantity_maximum\": 0,\n                \"page_title\": \"\",\n                \"meta_keywords\": [],\n                \"meta_description\": \"\",\n                \"date_created\": \"2021-08-04T10:32:01+00:00\",\n                \"date_modified\": \"2021-08-04T10:33:17+00:00\",\n                \"view_count\": 0,\n                \"preorder_release_date\": null,\n                \"preorder_message\": \"\",\n                \"is_preorder_only\": false,\n                \"is_price_hidden\": false,\n                \"price_hidden_label\": \"\",\n                \"custom_url\": {\n                    \"url\": \"/bigcommerce-coffee-mug/\",\n                    \"is_customized\": false\n                },\n                \"base_variant_id\": 84,\n                \"open_graph_type\": \"product\",\n                \"open_graph_title\": \"\",\n                \"open_graph_description\": \"\",\n                \"open_graph_use_meta_description\": true,\n                \"open_graph_use_product_name\": true,\n                \"open_graph_use_image\": true\n            }\n        ],\n        \"meta\": {}\n    },\n    \"Message\": \"products updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/products/v3/delete?storeHash=nda1b6kmix&object_id=610a6c9f92d74e0ad4e0b21a&product_id=119",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/products/v3/delete?storeHash=nda1b6kmix&object_id=610a6c9f92d74e0ad4e0b21a&product_id=119",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"v3",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						},
+						{
+							"key": "object_id",
+							"value": "610a6c9f92d74e0ad4e0b21a"
+						},
+						{
+							"key": "product_id",
+							"value": "119"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/products/v3/delete?storeHash=nda1b6kmix&object_id=610a6c9f92d74e0ad4e0b21a&product_id=119",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/products/v3/delete?storeHash=nda1b6kmix&object_id=610a6c9f92d74e0ad4e0b21a&product_id=119",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"products",
+								"v3",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								},
+								{
+									"key": "object_id",
+									"value": "610a6c9f92d74e0ad4e0b21a"
+								},
+								{
+									"key": "product_id",
+									"value": "119"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-V2SwJltsnbYsJQtbJz8yODdn3LU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 10:33:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": \"\",\n    \"Message\": \"product removed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/products/v3/getProduct?object_id=610a6829bf830b374097f246",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/products/v3/getProduct?object_id=610a6829bf830b374097f246",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"v3",
+						"getProduct"
+					],
+					"query": [
+						{
+							"key": "object_id",
+							"value": "610a6829bf830b374097f246"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/products/v3/getProduct?object_id=610a6829bf830b374097f246",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/products/v3/getProduct?object_id=610a6829bf830b374097f246",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"products",
+								"v3",
+								"getProduct"
+							],
+							"query": [
+								{
+									"key": "object_id",
+									"value": "610a6829bf830b374097f246"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-kdt2gmK6syhI5AHrELvQa+riC4s\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 11:04:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"_id\": \"610a6829bf830b374097f246\",\n        \"name\": \"itel A44 Pro batteries\",\n        \"price\": \"499.00\",\n        \"weight\": 10,\n        \"type\": \"physical\",\n        \"__v\": 0\n    },\n    \"Message\": \"Product details displayed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/products/v3/getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/products/v3/getAllProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"v3",
+						"getAllProducts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/products/v3/getAllProducts",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/products/v3/getAllProducts",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"products",
+								"v3",
+								"getAllProducts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "202"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ca-AEApyJriOtmzSh7240pFGCT22tI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 11:08:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": [\n        {\n            \"_id\": \"610a6829bf830b374097f246\",\n            \"name\": \"itel A44 Pro batteries\",\n            \"price\": \"499.00\",\n            \"weight\": 10,\n            \"type\": \"physical\",\n            \"__v\": 0\n        }\n    ],\n    \"Message\": \"Product details displayed successfully\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "e6a5103b-9353-4ccc-9649-43a113398f7a",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3030/orders/v2/create?storeHash=nda1b6kmix",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"billing_address\": {\r\n    \"first_name\": \"Jane\",\r\n    \"last_name\": \"Doe\",\r\n    \"street_1\": \"123 Main Street\",\r\n    \"city\": \"Austin\",\r\n    \"state\": \"Texas\",\r\n    \"zip\": \"78751\",\r\n    \"country\": \"United States\",\r\n    \"country_iso2\": \"US\",\r\n    \"email\": \"janedoe@email.com\"\r\n  },\r\n  \"products\": [\r\n    {\r\n      \"name\": \"itel A44 Pro batteries\",\r\n      \"quantity\": 1,\r\n      \"price_inc_tax\": 50,\r\n      \"price_ex_tax\": 45\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/orders/v2/create?storeHash=nda1b6kmix",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"create"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/create?storeHash=nda1b6kmix",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"billing_address\": {\r\n    \"first_name\": \"Jane\",\r\n    \"last_name\": \"Doe\",\r\n    \"street_1\": \"123 Main Street\",\r\n    \"city\": \"Austin\",\r\n    \"state\": \"Texas\",\r\n    \"zip\": \"78751\",\r\n    \"country\": \"United States\",\r\n    \"country_iso2\": \"US\",\r\n    \"email\": \"janedoe@email.com\"\r\n  },\r\n  \"products\": [\r\n    {\r\n      \"name\": \"itel A44 Pro batteries\",\r\n      \"quantity\": 1,\r\n      \"price_inc_tax\": 50,\r\n      \"price_ex_tax\": 45\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/orders/v2/create?storeHash=nda1b6kmix",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"create"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2441"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"989-Ip+9XY1cgCJso4ytVGPgcszB66E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:05:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"id\": 107,\n        \"customer_id\": 0,\n        \"date_created\": \"Wed, 04 Aug 2021 12:05:01 +0000\",\n        \"date_modified\": \"Wed, 04 Aug 2021 12:05:01 +0000\",\n        \"date_shipped\": \"\",\n        \"status_id\": 1,\n        \"status\": \"Pending\",\n        \"subtotal_ex_tax\": \"45.0000\",\n        \"subtotal_inc_tax\": \"50.0000\",\n        \"subtotal_tax\": \"5.0000\",\n        \"base_shipping_cost\": \"0.0000\",\n        \"shipping_cost_ex_tax\": \"0.0000\",\n        \"shipping_cost_inc_tax\": \"0.0000\",\n        \"shipping_cost_tax\": \"0.0000\",\n        \"shipping_cost_tax_class_id\": 0,\n        \"base_handling_cost\": \"0.0000\",\n        \"handling_cost_ex_tax\": \"0.0000\",\n        \"handling_cost_inc_tax\": \"0.0000\",\n        \"handling_cost_tax\": \"0.0000\",\n        \"handling_cost_tax_class_id\": 0,\n        \"base_wrapping_cost\": \"0.0000\",\n        \"wrapping_cost_ex_tax\": \"0.0000\",\n        \"wrapping_cost_inc_tax\": \"0.0000\",\n        \"wrapping_cost_tax\": \"0.0000\",\n        \"wrapping_cost_tax_class_id\": 0,\n        \"total_ex_tax\": \"45.0000\",\n        \"total_inc_tax\": \"50.0000\",\n        \"total_tax\": \"5.0000\",\n        \"items_total\": 1,\n        \"items_shipped\": 0,\n        \"payment_method\": \"Manual\",\n        \"payment_provider_id\": null,\n        \"payment_status\": \"\",\n        \"refunded_amount\": \"0.0000\",\n        \"order_is_digital\": false,\n        \"store_credit_amount\": \"0.0000\",\n        \"gift_certificate_amount\": \"0.0000\",\n        \"ip_address\": \"\",\n        \"geoip_country\": \"\",\n        \"geoip_country_iso2\": \"\",\n        \"currency_id\": 1,\n        \"currency_code\": \"INR\",\n        \"currency_exchange_rate\": \"1.0000000000\",\n        \"default_currency_id\": 1,\n        \"default_currency_code\": \"INR\",\n        \"staff_notes\": null,\n        \"customer_message\": null,\n        \"discount_amount\": \"0.0000\",\n        \"coupon_discount\": \"0.0000\",\n        \"shipping_address_count\": 1,\n        \"is_deleted\": false,\n        \"ebay_order_id\": \"0\",\n        \"cart_id\": null,\n        \"billing_address\": {\n            \"first_name\": \"Jane\",\n            \"last_name\": \"Doe\",\n            \"company\": \"\",\n            \"street_1\": \"123 Main Street\",\n            \"street_2\": \"\",\n            \"city\": \"Austin\",\n            \"state\": \"Texas\",\n            \"zip\": \"78751\",\n            \"country\": \"United States\",\n            \"country_iso2\": \"US\",\n            \"phone\": \"\",\n            \"email\": \"janedoe@email.com\",\n            \"form_fields\": []\n        },\n        \"is_email_opt_in\": false,\n        \"credit_card_type\": null,\n        \"order_source\": \"external\",\n        \"channel_id\": 1,\n        \"external_source\": null,\n        \"products\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/products\",\n            \"resource\": \"/orders/107/products\"\n        },\n        \"shipping_addresses\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/shipping_addresses\",\n            \"resource\": \"/orders/107/shipping_addresses\"\n        },\n        \"coupons\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/coupons\",\n            \"resource\": \"/orders/107/coupons\"\n        },\n        \"external_id\": null,\n        \"external_merchant_id\": null,\n        \"tax_provider_id\": \"\",\n        \"customer_locale\": \"\",\n        \"store_default_currency_code\": \"INR\",\n        \"store_default_to_transactional_exchange_rate\": \"1.0000000000\",\n        \"custom_status\": \"Pending\"\n    },\n    \"Message\": \"successfully order created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/orders/v2/update?storeHash=nda1b6kmix&objectId=610a826a4e04e51504f289ff&orderId=107",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"billing_address\": {\r\n    \"first_name\": \"Jane\",\r\n    \"last_name\": \"Doe\",\r\n    \"street_1\": \"3 Main Street\",\r\n    \"city\": \"Austin\",\r\n    \"state\": \"Texas\",\r\n    \"zip\": \"78751\",\r\n    \"country\": \"United States\",\r\n    \"country_iso2\": \"US\",\r\n    \"email\": \"janedoe@example.com\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/orders/v2/update?storeHash=nda1b6kmix&objectId=610a826a4e04e51504f289ff&orderId=107",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"update"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						},
+						{
+							"key": "objectId",
+							"value": "610a826a4e04e51504f289ff"
+						},
+						{
+							"key": "orderId",
+							"value": "107"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/update?storeHash=nda1b6kmix&objectId=610a826a4e04e51504f289ff&orderId=107",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"billing_address\": {\r\n    \"first_name\": \"Jane\",\r\n    \"last_name\": \"Doe\",\r\n    \"street_1\": \"3 Main Street\",\r\n    \"city\": \"Austin\",\r\n    \"state\": \"Texas\",\r\n    \"zip\": \"78751\",\r\n    \"country\": \"United States\",\r\n    \"country_iso2\": \"US\",\r\n    \"email\": \"janedoe@example.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/orders/v2/update?storeHash=nda1b6kmix&objectId=610a826a4e04e51504f289ff&orderId=107",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"update"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								},
+								{
+									"key": "objectId",
+									"value": "610a826a4e04e51504f289ff"
+								},
+								{
+									"key": "orderId",
+									"value": "107"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2441"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"989-T/hovon3etp17drEOhEFPixSdbY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:16:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"id\": 107,\n        \"customer_id\": 0,\n        \"date_created\": \"Wed, 04 Aug 2021 12:05:01 +0000\",\n        \"date_modified\": \"Wed, 04 Aug 2021 12:16:42 +0000\",\n        \"date_shipped\": \"\",\n        \"status_id\": 1,\n        \"status\": \"Pending\",\n        \"subtotal_ex_tax\": \"45.0000\",\n        \"subtotal_inc_tax\": \"50.0000\",\n        \"subtotal_tax\": \"5.0000\",\n        \"base_shipping_cost\": \"0.0000\",\n        \"shipping_cost_ex_tax\": \"0.0000\",\n        \"shipping_cost_inc_tax\": \"0.0000\",\n        \"shipping_cost_tax\": \"0.0000\",\n        \"shipping_cost_tax_class_id\": 0,\n        \"base_handling_cost\": \"0.0000\",\n        \"handling_cost_ex_tax\": \"0.0000\",\n        \"handling_cost_inc_tax\": \"0.0000\",\n        \"handling_cost_tax\": \"0.0000\",\n        \"handling_cost_tax_class_id\": 0,\n        \"base_wrapping_cost\": \"0.0000\",\n        \"wrapping_cost_ex_tax\": \"0.0000\",\n        \"wrapping_cost_inc_tax\": \"0.0000\",\n        \"wrapping_cost_tax\": \"0.0000\",\n        \"wrapping_cost_tax_class_id\": 0,\n        \"total_ex_tax\": \"45.0000\",\n        \"total_inc_tax\": \"50.0000\",\n        \"total_tax\": \"5.0000\",\n        \"items_total\": 1,\n        \"items_shipped\": 0,\n        \"payment_method\": \"Manual\",\n        \"payment_provider_id\": null,\n        \"payment_status\": \"\",\n        \"refunded_amount\": \"0.0000\",\n        \"order_is_digital\": false,\n        \"store_credit_amount\": \"0.0000\",\n        \"gift_certificate_amount\": \"0.0000\",\n        \"ip_address\": \"\",\n        \"geoip_country\": \"\",\n        \"geoip_country_iso2\": \"\",\n        \"currency_id\": 1,\n        \"currency_code\": \"INR\",\n        \"currency_exchange_rate\": \"1.0000000000\",\n        \"default_currency_id\": 1,\n        \"default_currency_code\": \"INR\",\n        \"staff_notes\": null,\n        \"customer_message\": null,\n        \"discount_amount\": \"0.0000\",\n        \"coupon_discount\": \"0.0000\",\n        \"shipping_address_count\": 1,\n        \"is_deleted\": false,\n        \"ebay_order_id\": \"0\",\n        \"cart_id\": null,\n        \"billing_address\": {\n            \"first_name\": \"Jane\",\n            \"last_name\": \"Doe\",\n            \"company\": \"\",\n            \"street_1\": \"3 Main Street\",\n            \"street_2\": \"\",\n            \"city\": \"Austin\",\n            \"state\": \"Texas\",\n            \"zip\": \"78751\",\n            \"country\": \"United States\",\n            \"country_iso2\": \"US\",\n            \"phone\": \"\",\n            \"email\": \"janedoe@example.com\",\n            \"form_fields\": []\n        },\n        \"is_email_opt_in\": false,\n        \"credit_card_type\": null,\n        \"order_source\": \"external\",\n        \"channel_id\": 1,\n        \"external_source\": null,\n        \"products\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/products\",\n            \"resource\": \"/orders/107/products\"\n        },\n        \"shipping_addresses\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/shipping_addresses\",\n            \"resource\": \"/orders/107/shipping_addresses\"\n        },\n        \"coupons\": {\n            \"url\": \"https://api.bigcommerce.com/stores/nda1b6kmix/v2/orders/107/coupons\",\n            \"resource\": \"/orders/107/coupons\"\n        },\n        \"external_id\": null,\n        \"external_merchant_id\": null,\n        \"tax_provider_id\": \"\",\n        \"customer_locale\": \"\",\n        \"store_default_currency_code\": \"INR\",\n        \"store_default_to_transactional_exchange_rate\": \"1.0000000000\",\n        \"custom_status\": \"Pending\"\n    },\n    \"Message\": \"successfully order Updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/orders/v2/delete?storeHash=nda1b6kmix&object_id=610a824e4e04e51504f289f5&order_id=105",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/orders/v2/delete?storeHash=nda1b6kmix&object_id=610a824e4e04e51504f289f5&order_id=105",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						},
+						{
+							"key": "object_id",
+							"value": "610a824e4e04e51504f289f5"
+						},
+						{
+							"key": "order_id",
+							"value": "105"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/delete?storeHash=nda1b6kmix&object_id=610a824e4e04e51504f289f5&order_id=105",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/orders/v2/delete?storeHash=nda1b6kmix&object_id=610a824e4e04e51504f289f5&order_id=105",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								},
+								{
+									"key": "object_id",
+									"value": "610a824e4e04e51504f289f5"
+								},
+								{
+									"key": "order_id",
+									"value": "105"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-jfRhh1/c/V5UToCsTjrC6bRgdoE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:40:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": \"\",\n    \"Message\": \"order removed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/orders/v2/getOrder?object_id=610a825b4e04e51504f289fa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/orders/v2/getOrder?object_id=610a825b4e04e51504f289fa",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"getOrder"
+					],
+					"query": [
+						{
+							"key": "object_id",
+							"value": "610a825b4e04e51504f289fa"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/getOrder?object_id=610a825b4e04e51504f289fa",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/orders/v2/getOrder?object_id=610a825b4e04e51504f289fa",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"getOrder"
+							],
+							"query": [
+								{
+									"key": "object_id",
+									"value": "610a825b4e04e51504f289fa"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "454"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c6-9AduXktDjO6pR5AWfYbd+RUJ33M\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:41:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": {\n        \"billing_address\": {\n            \"first_name\": \"Kausic\",\n            \"last_name\": \"M\",\n            \"street_1\": \"123 Main Street\",\n            \"city\": \"Austin\",\n            \"state\": \"Texas\",\n            \"zip\": 78751,\n            \"country\": \"United States\",\n            \"country_iso2\": \"US\",\n            \"email\": \"janedoe@email.com\"\n        },\n        \"_id\": \"610a825b4e04e51504f289fa\",\n        \"products\": [\n            {\n                \"_id\": \"610a825b4e04e51504f289fb\",\n                \"name\": \"itel A44 Pro batteries\",\n                \"quantity\": 1,\n                \"price_inc_tax\": 50,\n                \"price_ex_tax\": 45\n            }\n        ],\n        \"__v\": 0\n    },\n    \"Message\": \"Order details displayed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/orders/v2/getAllOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/orders/v2/getAllOrders",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"getAllOrders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/getAllOrders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/orders/v2/getAllOrders",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"getAllOrders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "456"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c8-CfhNI6qi/ECzVsSdWIL+yRkeIY8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:41:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"details\": [\n        {\n            \"billing_address\": {\n                \"first_name\": \"Kausic\",\n                \"last_name\": \"M\",\n                \"street_1\": \"123 Main Street\",\n                \"city\": \"Austin\",\n                \"state\": \"Texas\",\n                \"zip\": 78751,\n                \"country\": \"United States\",\n                \"country_iso2\": \"US\",\n                \"email\": \"janedoe@email.com\"\n            },\n            \"_id\": \"610a825b4e04e51504f289fa\",\n            \"products\": [\n                {\n                    \"_id\": \"610a825b4e04e51504f289fb\",\n                    \"name\": \"itel A44 Pro batteries\",\n                    \"quantity\": 1,\n                    \"price_inc_tax\": 50,\n                    \"price_ex_tax\": 45\n                }\n            ],\n            \"__v\": 0\n        }\n    ],\n    \"Message\": \"Order details displayed successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/orders/v2/deleteAll?storeHash=nda1b6kmix",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/orders/v2/deleteAll?storeHash=nda1b6kmix",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"orders",
+						"v2",
+						"deleteAll"
+					],
+					"query": [
+						{
+							"key": "storeHash",
+							"value": "nda1b6kmix"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/orders/v2/deleteAll?storeHash=nda1b6kmix",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/orders/v2/deleteAll?storeHash=nda1b6kmix",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"orders",
+								"v2",
+								"deleteAll"
+							],
+							"query": [
+								{
+									"key": "storeHash",
+									"value": "nda1b6kmix"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-2zfDcSk/zjUXk03YtATLKU2MQHU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Aug 2021 12:42:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"True\",\n    \"Message\": \"All orders removed successfully\"\n}"
+				}
+			]
+		}
+	]
+}
